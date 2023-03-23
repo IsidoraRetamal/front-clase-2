@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>INDEX</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">INDEX</a>
+            <a href="page-1.html">PAGE-1</a>
+            <a href="page-2.html">PAGE-2</a>
+            <a href="page-3.html">PAGE-3</a>
+        </nav>
+        <main></main>
+        <aside>
+            <p>
+                Hola!!, mi nombre es Isidora, me gusta las almendras con yogurth y el color azul, luego de este texto descubri que tambien soy muy resilente, espero seguir siendolo. Tome este ramo porque tenia 0 conocimiento de este
+                lenguaje y si algo me gusta es aprender cosas nuevas, aunque sea un poquito :)
+            </p>
+        </aside>
+        <script>
+            function setup() {
+                createCanvas(windowWidth, windowHeight);
+                selectAll("a")[0].addClass("aqui");
+            }
+            function draw() {
+                background(255, 182, 193);
+                textAlign(CENTER, CENTER);
+                textSize(50);
+                text("🍄", mouseX, mouseY);
+
+                function windowResized() {
+                    resizeCanvas(windowWidth, windowHeight);
+                }
+            }
+        </script>
+    </body>
+</html>
