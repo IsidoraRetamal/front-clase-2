@@ -6,9 +6,6 @@ html, body {
   min-height:100%;
   font-family: 'Kanit', sans-serif;
   background:rgb(240,240,240);
-  
-    
-    
 }
 canvas {
   display: block;
